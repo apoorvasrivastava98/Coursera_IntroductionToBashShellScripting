@@ -1,0 +1,17 @@
+touch myBashScript   #to create new file
+ls -l myBashScript
+mv myBashScript muchBetterName
+ls -l
+rm muchBetterName    #to remove the file
+ls -l
+
+cat kinglear.txt     #to create a file
+
+cat kinglear.txt > myNewFile.txt
+ls -l
+cat myNewFile.txt
+
+more myNewFile.txt
+less myNewFile.txt
+nano myNewFile.txt
+more myNewFile.txt
