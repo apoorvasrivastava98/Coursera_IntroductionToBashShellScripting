@@ -1,0 +1,23 @@
+echo $SHELL
+ls
+ls -al 
+man ls
+pwd
+cd /
+ls -l
+
+cd
+pwd
+cd ..
+pwd
+ls -al
+cd rhyme
+
+cd ~
+pwd
+
+cd /lib/terminfo
+ls -l
+
+cd h
+cd ../../../home/rhyme
