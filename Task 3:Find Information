@@ -1,0 +1,30 @@
+mkdir newDir
+ls -l
+
+mv newDir backups
+ls -l
+
+touch backups/file1
+touch backups/file2
+ls -l backups
+
+rm -ir backups
+ls -l
+
+find / -name "backups"
+
+find / -name "backups" 2>/dev/null
+
+find / -name "*backups*" 2>/dev/null
+
+grep python /usr/bin/pydoc     #to find contents
+
+find / -name "*backups*" 2>/dev/null | grep $USER
+
+!ls
+
+history
+
+history | grep cat
+
+man find
