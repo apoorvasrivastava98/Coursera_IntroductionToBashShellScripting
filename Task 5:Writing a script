@@ -1,0 +1,20 @@
+cd
+nano mybackup
+
+#!/bin/bash
+
+DATE='date +%d%m%Y'
+BACKUP="backup_"
+EXT=".tar"
+
+chmod u=rwx mybackup
+ll mybackup
+
+chmod o+r mybackup
+ll mybackup
+
+./mybackup
+
+nano mybackup
+tar cf $filename $backup_path
+gzip $filename
