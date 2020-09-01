@@ -1,0 +1,21 @@
+if test -f "$filename"; then
+  echo "Here's your daily backup@" | mail -A $filename -s "today's backup" rhyme@gmail.com
+else
+  echo $DATE "There was a problem creating backup file." >> $home_path/error.log
+fi
+
+crontab -l
+
+crontab -e
+0 2 * * * /home/rhyme/mybackup
+* * * * * /path/to/script
+
+crontab -r
+
+crontab -e
+@yearly /path/to/job
+@annually /path/to/job
+@monthly /path/to/job
+@daily /path/to/job
+@hourly /path/to/job
+@reboot /path/to/job
