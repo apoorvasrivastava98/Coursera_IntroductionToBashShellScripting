@@ -1,0 +1,17 @@
+ll
+alias ll    #alias ll='ls -alF'   (where F means to classify entries)
+ll
+
+nano .bash_aliases
+
+alias fbackup='find ~ ~name "backup*" 2>/dev/null'
+
+cd ~/Public
+pwd
+cd-
+
+fbackup
+
+source .bash_aliases
+fbackup
+
